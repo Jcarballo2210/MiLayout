@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SegundaActivity">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="141dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_Imagen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/a_imagen" />
+
+        <Button
+            android:id="@+id/btn_Ocultar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="ocultar"
+            android:text="@string/btn_Ocultar" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="395dp"
+        android:layout_height="414dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/ibtn_Bananas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#4CAF50"
+                android:contentDescription="@string/descripcion"
+                android:onClick="seleccionarFruta"
+                app:srcCompat="@drawable/bananas" />
+
+            <ImageButton
+                android:id="@+id/ibtn_Cerezas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFC107"
+                android:contentDescription="@string/descripcion"
+                android:onClick="seleccionarFruta"
+                app:srcCompat="@drawable/cerezas" />
+
+            <ImageButton
+                android:id="@+id/ibtn_Frambuesas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#4CAF50"
+                android:contentDescription="@string/descripcion"
+                android:onClick="seleccionarFruta"
+                app:srcCompat="@drawable/frambuesas" />
+
+            <ImageButton
+                android:id="@+id/ibtn_Fresas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFC107"
+                android:contentDescription="@string/descripcion"
+                android:onClick="seleccionarFruta"
+                app:srcCompat="@drawable/fresas" />
+
+            <ImageButton
+                android:id="@+id/ibtn_Kiwis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#4CAF50"
+                android:contentDescription="@string/descripcion"
+                android:onClick="seleccionarFruta"
+                app:srcCompat="@drawable/kiwis" />
+
+            <ImageButton
+                android:id="@+id/ibtn_Mango"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFC107"
+                android:contentDescription="@string/descripcion"
+                android:onClick="seleccionarFruta"
+                app:srcCompat="@drawable/mangos" />
+
+            <ImageButton
+                android:id="@+id/ibtn_Manzanas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#4CAF50"
+                android:contentDescription="@string/descripcion"
+                android:onClick="seleccionarFruta"
+                app:srcCompat="@drawable/manzanas" />
+
+            <ImageButton
+                android:id="@+id/ibtn_Melon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFC107"
+                android:contentDescription="@string/descripcion"
+                android:onClick="seleccionarFruta"
+                app:srcCompat="@drawable/melon" />
+
+            <ImageButton
+                android:id="@+id/ibtn_Naranjas"
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:background="#4CAF50"
+                android:contentDescription="@string/descripcion"
+                android:onClick="seleccionarFruta"
+                app:srcCompat="@drawable/naranjas" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MiLayout</string>
+    <string name="tv_Mostrar_String">Selecciona un nombre</string>
+    <string name="btn_Siguiente">Siguiente</string>
+    <string name="btn_Ocultar">Ocultar</string>
+    <string name="descripcion">Descripcion</string>
+
+</resources>
